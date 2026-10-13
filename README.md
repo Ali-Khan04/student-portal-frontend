@@ -1,16 +1,36 @@
-# React + Vite
+# Student Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CRUD application for managing student records. The main objective of this project is to demonstrate AWS deployment using VPC, EC2, and S3.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- REST API
+- AWS VPC
+- AWS EC2
+- AWS S3
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- View all students
+- Add a student
+- Update student details
+- Delete a student
 
-## Expanding the ESLint configuration
+## Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **VPC:** Provides the AWS network environment.
+- **EC2:** Hosts the backend REST API.
+- **S3:** Hosts the React frontend as a static website.
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Purpose
+
+This project was developed as a lab assignment to practice AWS networking, EC2-based backend hosting, and S3-based frontend hosting.
